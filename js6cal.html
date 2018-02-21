@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>your calculator</title>
+	<style type="text/css">
+		input#results{
+			width: 68%;
+			height: 50px;
+			margin-top: -10px;
+		}
+		input#v1,#v2{
+			height: 30px;
+			width: 158px;
+			text-align: center;
+		}
+		table{
+			margin-top: 50px;
+			background-color: #212E36;
+		}
+		button{
+			width: 80px;
+			height: 40px;
+			margin-top: -10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<table align="center" border="1" width="50%">
+			<tr>
+				<td align="center">
+				<h3 style="color:white" align="center">CALCULATOR</h3>
+				<input id="results" type="result" name=""><br><br>
+				<input type="text" name="v1" id="v1">
+				<input type="text" name="v2" id="v2">
+				<p style="color:white">Calculate<hr></p>
+				<button onclick="multiply()">*</button>
+				<button onclick="add()">+</button>
+				<button onclick="subtract()">-</button>
+				<button onclick="divide()">/</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+	<script type="text/javascript">
+	var value1=2;
+	var value2=5;
+	function multiply()
+	{ 	
+		value1=v1.value;
+		value2=v2.value;
+		var result= value1 * value2;
+		results.value= result;
+	} 
+	function add()
+	{ 	
+		value1=v1.value;
+		value2=v2.value;
+		var result= parseInt(value1)+parseInt(value2);
+		results.value= result;
+	} 
+	function subtract()
+	{ 	
+		value1=v1.value;
+		value2=v2.value;
+		var result= value1 - value2;
+		results.value= result;
+	} 
+	function divide()
+	{ 	
+		value1=v1.value;
+		value2=v2.value;
+		var result= value1 / value2;
+		results.value= result;
+	} 
+</script>
+</html>
