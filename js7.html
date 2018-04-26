@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js7_parametize function</title>
+</head>
+<body>
+	<div class="container=fluid">
+		<div align="center" style="margin-top:300px;">
+			<input type="text" name="" id="result"><br>
+			<button  onclick="get('1')">1</button>
+			<button onclick="get('2')">2</button>
+			<button onclick="get('3')">3</button>
+			<button onclick="get('4')">4</button>
+			<button onclick="get('5')">5</button>
+			<button onclick="get('6')">6</button><br>
+			<button onclick="get('+')">+</button>
+			<button onclick="get('-')">-</button>
+			<button onclick="get('*')">*</button>
+			<button onclick="get('/')">/</button>
+			<button onclick="get('clear')">clear</button>
+
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		function get(b)
+		{
+			var c=result.value;
+			if (b=="clear") {result.value="0";}
+				else{if (c==0) {result.value=b;}
+				else{result.value+=b;}	}			
+		}
+	</script>
+</html>

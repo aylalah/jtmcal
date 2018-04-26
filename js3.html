@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js3</title>
+</head>
+<body>
+	<tbody id="view1">value1<input type="text" name="v1" id="v1"></tbody><br>
+	<tbody id="view2">value2<input type="text" name="v2" id="v2"></tbody><br>
+	<tbody><input type="resuli" name="" id="results"></tbody><br>
+	<button onclick="calculate()">result</button>
+</body>
+<script type="text/javascript">
+	var value1=2;
+	var value2=5;
+	function calculate()
+	{ 	
+		value1=v1.value;
+		value2=v2.value;
+		var result= value1 * value2;
+		results.value= result;
+	} 
+</script>
+</html>

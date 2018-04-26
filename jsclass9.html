@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>converter</title>
+	<meta charset="utf-8">
+	<meta name="veiwport" content="width=width-width, initial scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.css">
+</head>
+<body>
+	<div class="container mt=3">
+		<table class="table table-hover" >
+			<thead align="center">
+				<tr>
+					<th colspan="2">
+						CONVERTER
+					</th>
+				</tr>
+			</thead>
+			<tbody align="center">
+				<tr>
+					<td>
+						Gram
+					</td>
+					<td>
+						kgram
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="" id="g">
+					</td>
+					<td>
+						<input type="text" name="" id="kg">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button onclick="converter()">convert</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+<script type="text/javascript">
+	function converter()
+	{
+		
+		if (g.value !="")
+		{
+			var gram=g.value;
+			var result=gram/1000;
+			kg.value=result;
+		}
+		else {
+			var kgram=kg.value;
+			var result=kgram*1000;
+			g.value=result;
+		}
+	}
+
+</script>
+
+</html>
